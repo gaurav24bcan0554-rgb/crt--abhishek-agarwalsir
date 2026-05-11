@@ -1,0 +1,140 @@
+/*
+ *  ██████╗     ██████╗ ██████╗ ██████╗ ███████╗
+ * ██╔════╝    ██╔════╝ ██╔══██╗██╔══██╗██╔════╝
+ * ██║         ██║      ██████╔╝██████╔╝███████╗
+ * ██║         ██║      ██╔═══╝ ██╔═══╝ ╚════██║
+ * ╚██████╗    ╚██████╗ ██║     ██║     ███████║
+ *  ╚═════╝     ╚═════╝ ╚═╝     ╚═╝     ╚══════╝
+ * ----------------------------------------------
+ * 🚀 16-DAY MASTERCLASS | DAY 05 (FUNCTIONS)
+ * 👨‍🏫 INSTRUCTOR: ABHISHEK AGGARWAL
+ * ----------------------------------------------
+ */
+
+// ==============================================
+// 💎 PROBLEM 01: DIAMOND HALF-PATTERN 🔼🔽
+// 📝 Task: Combine upper and lower triangles
+// 🖼️ Pattern:
+// *
+// **
+// ***
+// **
+// *
+// ==============================================
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     // Upper triangle 
+//     for(int i = 1; i <= 5; i++) {
+//         for(int j = 1;  j<= i; j++) {
+//             cout << "*";
+//         }
+//         cout <<"\n";
+//     }
+    
+//     // Lower triangle
+//     for(int i = 5 - 1;  i >= 1; i--) {
+//         for(int j = 1; j <= i; j++) {
+//             cout <<"*";
+//         }
+//         cout <<"\n";
+//     }
+// }
+
+// ==============================================
+// 💎 PROBLEM 02: BASIC FUNCTION VOID 📢
+// 📝 Task: Define and call a simple message function
+// ==============================================
+
+// #include <iostream>
+// using namespace std;
+
+// void printMessage(){
+//     cout << "Hi we are learning Functions....";
+// }
+
+// int main() {
+//     printMessage();
+//     return 0; 
+// }
+
+// ==============================================
+// 💎 PROBLEM 03: AREA CALCULATOR 📐
+// 📝 Task: Function with parameters and return value
+// ==============================================
+
+// #include <iostream>
+// using namespace std;
+
+// int calculateArea(int length, int width){
+//     return length * width;
+// }
+
+// int main() {
+//     int a = 12;
+//     int b = 10;
+//     int area = calculateArea(a, b);
+//     cout << area;
+// }
+
+// ==============================================
+// 💎 PROBLEM 04: THE FOUR TYPES OF FUNCTIONS 🛠️
+// ==============================================
+
+// 4.1 -- No argument, No Return
+// void bellRing(){ cout << "Ting Tong..."; }
+
+// 4.2 -- Argument, No Return
+// void sendMessage(string msg) { cout << msg; }
+
+// 4.3 -- No argument, Return
+// int ticketNumber(){ return 101; }
+
+// 4.4 -- Argument, Return
+// float currencyConvertor(float rupees) { return rupees / 95.25; }
+
+// ==============================================
+// 💎 PROBLEM 05: FUNCTION OVERLOADING 🏗️
+// 📝 Task: Use the same name 'add' for different types/counts
+// ==============================================
+
+#include <iostream>
+using namespace std;
+
+// Adding two integers
+int add(int a, int b){
+    return a + b;
+}
+
+// Adding two doubles
+double add(double a, double b){
+    return a + b;
+}
+
+// Adding three integers
+int add(int a, int b, int c){
+    return a + b + c;
+}
+
+// Adding four floats
+float add(float a, float b, float c, float d){
+    return a + b + c + d;
+}
+
+int main() {
+    cout << "Int Add (2): " << add(5, 2) << "\n";
+    cout << "Double Add:   " << add(5.5, 7.9) <<"\n";
+    cout << "Int Add (3): " << add(5, 2, 3) << "\n";
+    cout << "Float Add(4): " << add(5.0f, 2.3f, 5.5f, 7.9f) <<"\n";
+    
+    return 0;
+}
+
+/*
+ * ----------------------------------------------
+ * ✅ END OF DAY 05 CODEBASE
+ * ----------------------------------------------
+ */
+
